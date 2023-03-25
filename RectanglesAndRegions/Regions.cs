@@ -58,7 +58,9 @@ namespace RectanglesAndRegions
                 //	+" is inside Rectangle "+ bigRect.ToString() );
                 e.Graphics.DrawRectangle(Pens.Green, bigRect);
             }
-
+            e.Graphics.SetClip(new Rectangle(0, 0, 50, 50));
+            textBox1.Text = e.Graphics.ClipBounds.ToString();
+            textBox2.Text = e.Graphics.VisibleClipBounds.ToString();
         }
 
         private void entersectToolStripMenuItem_Click(object sender, EventArgs e)

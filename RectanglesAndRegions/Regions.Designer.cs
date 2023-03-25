@@ -46,6 +46,8 @@
             excludeClipToolStripMenuItem = new ToolStripMenuItem();
             setClipToolStripMenuItem = new ToolStripMenuItem();
             translateClipToolStripMenuItem = new ToolStripMenuItem();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -95,56 +97,56 @@
             // constructToolStripMenuItem
             // 
             constructToolStripMenuItem.Name = "constructToolStripMenuItem";
-            constructToolStripMenuItem.Size = new Size(180, 22);
+            constructToolStripMenuItem.Size = new Size(171, 22);
             constructToolStripMenuItem.Text = "Construct";
             constructToolStripMenuItem.Click += constructToolStripMenuItem_Click;
             // 
             // complementToolStripMenuItem
             // 
             complementToolStripMenuItem.Name = "complementToolStripMenuItem";
-            complementToolStripMenuItem.Size = new Size(180, 22);
+            complementToolStripMenuItem.Size = new Size(171, 22);
             complementToolStripMenuItem.Text = "Complement";
             complementToolStripMenuItem.Click += complementToolStripMenuItem_Click;
             // 
             // emptyAndOthersToolStripMenuItem
             // 
             emptyAndOthersToolStripMenuItem.Name = "emptyAndOthersToolStripMenuItem";
-            emptyAndOthersToolStripMenuItem.Size = new Size(180, 22);
+            emptyAndOthersToolStripMenuItem.Size = new Size(171, 22);
             emptyAndOthersToolStripMenuItem.Text = "Empty And Others";
             emptyAndOthersToolStripMenuItem.Click += emptyAndOthersToolStripMenuItem_Click;
             // 
             // excludeToolStripMenuItem
             // 
             excludeToolStripMenuItem.Name = "excludeToolStripMenuItem";
-            excludeToolStripMenuItem.Size = new Size(180, 22);
+            excludeToolStripMenuItem.Size = new Size(171, 22);
             excludeToolStripMenuItem.Text = "Exclude";
             excludeToolStripMenuItem.Click += excludeToolStripMenuItem_Click;
             // 
             // unionToolStripMenuItem
             // 
             unionToolStripMenuItem.Name = "unionToolStripMenuItem";
-            unionToolStripMenuItem.Size = new Size(180, 22);
+            unionToolStripMenuItem.Size = new Size(171, 22);
             unionToolStripMenuItem.Text = "Union";
             unionToolStripMenuItem.Click += unionToolStripMenuItem_Click;
             // 
             // xorToolStripMenuItem
             // 
             xorToolStripMenuItem.Name = "xorToolStripMenuItem";
-            xorToolStripMenuItem.Size = new Size(180, 22);
+            xorToolStripMenuItem.Size = new Size(171, 22);
             xorToolStripMenuItem.Text = "Xor";
             xorToolStripMenuItem.Click += xorToolStripMenuItem_Click;
             // 
             // entersectToolStripMenuItem
             // 
             entersectToolStripMenuItem.Name = "entersectToolStripMenuItem";
-            entersectToolStripMenuItem.Size = new Size(180, 22);
+            entersectToolStripMenuItem.Size = new Size(171, 22);
             entersectToolStripMenuItem.Text = "Intersect";
             entersectToolStripMenuItem.Click += entersectToolStripMenuItem_Click;
             // 
             // exclToolStripMenuItem
             // 
             exclToolStripMenuItem.Name = "exclToolStripMenuItem";
-            exclToolStripMenuItem.Size = new Size(180, 22);
+            exclToolStripMenuItem.Size = new Size(171, 22);
             exclToolStripMenuItem.Text = "Excl";
             exclToolStripMenuItem.Click += exclToolStripMenuItem_Click;
             // 
@@ -176,11 +178,27 @@
             translateClipToolStripMenuItem.Text = "TranslateClip";
             translateClipToolStripMenuItem.Click += translateClipToolStripMenuItem_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(308, 114);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(431, 23);
+            textBox1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(308, 185);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(431, 23);
+            textBox2.TabIndex = 2;
+            // 
             // Regions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Regions";
@@ -213,5 +231,7 @@
         private ToolStripMenuItem excludeClipToolStripMenuItem;
         private ToolStripMenuItem setClipToolStripMenuItem;
         private ToolStripMenuItem translateClipToolStripMenuItem;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

@@ -46,8 +46,6 @@
             excludeClipToolStripMenuItem = new ToolStripMenuItem();
             setClipToolStripMenuItem = new ToolStripMenuItem();
             translateClipToolStripMenuItem = new ToolStripMenuItem();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,7 +54,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { rectangleToolStripMenuItem, rectangeFToolStripMenuItem, regionToolStripMenuItem, clippingToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(837, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -86,6 +84,7 @@
             rectangeFToolStripMenuItem.Name = "rectangeFToolStripMenuItem";
             rectangeFToolStripMenuItem.Size = new Size(74, 20);
             rectangeFToolStripMenuItem.Text = "RectangeF";
+            rectangeFToolStripMenuItem.Click += rectangeFToolStripMenuItem_Click;
             // 
             // regionToolStripMenuItem
             // 
@@ -178,27 +177,11 @@
             translateClipToolStripMenuItem.Text = "TranslateClip";
             translateClipToolStripMenuItem.Click += translateClipToolStripMenuItem_Click;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(308, 114);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(431, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(308, 185);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(431, 23);
-            textBox2.TabIndex = 2;
-            // 
             // Regions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            ClientSize = new Size(837, 416);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Regions";
@@ -231,7 +214,5 @@
         private ToolStripMenuItem excludeClipToolStripMenuItem;
         private ToolStripMenuItem setClipToolStripMenuItem;
         private ToolStripMenuItem translateClipToolStripMenuItem;
-        private TextBox textBox1;
-        private TextBox textBox2;
     }
 }

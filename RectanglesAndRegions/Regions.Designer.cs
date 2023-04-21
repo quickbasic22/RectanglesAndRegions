@@ -181,7 +181,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(837, 416);
+            ClientSize = new Size(837, 564);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Regions";

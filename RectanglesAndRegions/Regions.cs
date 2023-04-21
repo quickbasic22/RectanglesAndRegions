@@ -24,6 +24,9 @@ namespace RectanglesAndRegions
 
         private void Regions_Paint(object sender, PaintEventArgs e)
         {
+
+            DrawPolygon(e.Graphics);
+
             e.Graphics.Clear(this.BackColor);
             if (options == 1)
             {
@@ -635,6 +638,27 @@ namespace RectanglesAndRegions
             g.FillRectangle(Brushes.Red, rect2);";
             g.DrawString(str26, new Font("Arial", 12.0f, FontStyle.Bold), Brushes.BlueViolet, rectf);
             g.Dispose();
+        }
+
+        private void DrawPolygon(Graphics e)
+        {
+
+
+            // Create array of two points.
+            Point[] points = { new Point(0, 0), new Point(100, 50) };
+
+            // Draw line connecting two untransformed points.
+            e.DrawLine(new Pen(Color.Blue, 3), points[0], points[1]);
+
+            // Set world transformation of Graphics object to translate.
+            e.TranslateTransform(40, 30);
+
+            // Transform points in array from world to page coordinates.
+            e.TransformPoints(CoordinateSpace.Page, CoordinateSpace.World, points);
+
+            // Draw line that connects transformed points.
+            e.DrawLine(new Pen(Color.Red, 25f), points[0], points[1]);
+
         }
     }
 }
